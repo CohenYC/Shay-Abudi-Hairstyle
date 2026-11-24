@@ -1,0 +1,1465 @@
+
+
+<!DOCTYPE html>
+
+<html lang="he" dir="rtl">
+
+
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+
+
+    <title>שי עבודי | עיצוב שיער - יבנה</title>
+
+
+
+    <style>
+
+
+
+
+
+
+        :root {
+
+            --bg: #faf6f2;
+
+            --card: #ffffff;
+
+            --ink: #231c1a;
+
+            --mute: #74665f;
+
+            --acc: #b07a52;
+
+            --acc2: #8a5a37;
+
+            --line: #ece1d8;
+
+
+
+            box-sizing: border-box;
+
+            padding-top: env(safe-area-inset-top, 0px);
+
+            padding-bottom: env(safe-area-inset-bottom, 0px);
+
+        }
+
+
+
+
+
+
+        @media (prefers-color-scheme: dark) {
+
+            :root:not([data-theme="light"]) {
+
+                --bg: #171210;
+
+                --card: #221b18;
+
+                --ink: #f6ece4;
+
+                --mute: #b5a398;
+
+                --acc: #d09a6c;
+
+                --acc2: #e3b68e;
+
+                --line: #352b26;
+
+            }
+
+        }
+
+
+
+        :root[data-theme="dark"] {
+
+            --bg: #171210;
+
+            --card: #221b18;
+
+            --ink: #f6ece4;
+
+            --mute: #b5a398;
+
+            --acc: #d09a6c;
+
+            --acc2: #e3b68e;
+
+            --line: #352b26;
+
+        }
+
+
+
+
+
+
+
+
+        * {
+
+            box-sizing: border-box;
+
+        }
+
+
+
+        html {
+
+            scroll-behavior: smooth;
+
+            scroll-padding-top: 70px;
+
+        }
+
+
+
+        body {
+
+            margin: 0;
+
+            background: var(--bg);
+
+            color: var(--ink);
+
+            font-family: "Heebo", "Segoe UI", Arial, sans-serif;
+
+            line-height: 1.6;
+
+        }
+
+
+
+        .w {
+
+            max-width: 980px;
+
+            margin: 0 auto;
+
+            padding: 0 20px;
+
+        }
+
+
+
+
+
+
+
+
+        nav {
+
+            position: sticky;
+
+            top: env(safe-area-inset-top, 0px);
+
+            background: var(--bg);
+
+            border-bottom: 1px solid var(--line);
+
+            z-index: 5;
+
+        }
+
+
+
+        nav .w {
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            height: 58px;
+
+        }
+
+
+
+        nav b {
+
+            letter-spacing: 0.5px;
+
+            font-size: 1.1rem;
+
+        }
+
+
+
+        nav b span {
+
+            color: var(--acc);
+
+        }
+
+
+
+        nav div a {
+
+            color: var(--mute);
+
+            text-decoration: none;
+
+            margin-inline-start: 18px;
+
+            font-size: 0.92rem;
+
+        }
+
+
+
+        @media (max-width: 620px) {
+
+            nav div a:not(.btn) {
+
+                display: none;
+
+            }
+
+        }
+
+
+
+
+
+
+
+
+        .btn {
+
+            display: inline-block;
+
+            background: var(--acc);
+
+            color: #ffffff !important;
+
+            text-decoration: none;
+
+            font-weight: 700;
+
+            padding: 11px 24px;
+
+            border-radius: 99px;
+
+            margin-inline-start: 0 !important;
+
+        }
+
+
+
+        .btn.o {
+
+            background: transparent;
+
+            color: var(--ink) !important;
+
+            border: 1.5px solid var(--acc);
+
+        }
+
+
+
+
+
+
+
+
+        .hero {
+
+            padding: 84px 0 64px;
+
+            text-align: center;
+
+            background: radial-gradient(
+
+                ellipse at 50% 0,
+
+                rgba(176, 122, 82, 0.22),
+
+                transparent 65%
+
+            );
+
+        }
+
+
+
+        .tag {
+
+            color: var(--acc);
+
+            letter-spacing: 3px;
+
+            font-size: 0.8rem;
+
+            font-weight: 700;
+
+        }
+
+
+
+        .hero h1 {
+
+            font-size: clamp(2.2rem, 8vw, 4.2rem);
+
+            line-height: 1.1;
+
+            margin: 14px 0;
+
+        }
+
+
+
+        .hero h1 em {
+
+            font-style: normal;
+
+            color: var(--acc);
+
+        }
+
+
+
+        .hero p {
+
+            max-width: 520px;
+
+            margin: 0 auto 26px;
+
+            color: var(--mute);
+
+            font-size: 1.1rem;
+
+        }
+
+
+
+        .hero .btn {
+
+            margin: 4px;
+
+        }
+
+
+
+        .art {
+
+            width: 150px;
+
+            height: 150px;
+
+            margin: 0 auto 6px;
+
+            display: block;
+
+        }
+
+
+
+        .rate {
+
+            display: inline-flex;
+
+            gap: 8px;
+
+            align-items: center;
+
+            margin-top: 26px;
+
+            background: var(--card);
+
+            border: 1px solid var(--line);
+
+            border-radius: 99px;
+
+            padding: 7px 18px;
+
+            font-size: 0.92rem;
+
+        }
+
+
+
+        .rate b {
+
+            color: var(--acc);
+
+        }
+
+
+
+
+
+
+
+
+        h2 {
+
+            font-size: 1.9rem;
+
+            margin: 64px 0 6px;
+
+        }
+
+
+
+        .sub {
+
+            color: var(--mute);
+
+            margin: 0 0 22px;
+
+        }
+
+
+
+
+
+
+
+
+        .grid {
+
+            display: grid;
+
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+            gap: 14px;
+
+        }
+
+
+
+        .c {
+
+            background: var(--card);
+
+            border: 1px solid var(--line);
+
+            border-radius: 18px;
+
+            padding: 22px;
+
+        }
+
+
+
+        .c .i {
+
+            font-size: 1.7rem;
+
+        }
+
+
+
+        .c h3 {
+
+            margin: 8px 0 4px;
+
+        }
+
+
+
+        .c p {
+
+            margin: 0;
+
+            color: var(--mute);
+
+            font-size: 0.93rem;
+
+        }
+
+
+
+
+
+
+
+
+        .pl {
+
+            background: var(--card);
+
+            border: 1px solid var(--line);
+
+            border-radius: 18px;
+
+            overflow: hidden;
+
+        }
+
+
+
+        .pl div {
+
+            display: flex;
+
+            justify-content: space-between;
+
+            padding: 15px 22px;
+
+            border-bottom: 1px solid var(--line);
+
+        }
+
+
+
+        .pl div:last-child {
+
+            border: 0;
+
+        }
+
+
+
+        .pl b {
+
+            color: var(--acc2);
+
+            white-space: nowrap;
+
+        }
+
+
+
+        .note {
+
+            font-size: 0.85rem;
+
+            color: var(--mute);
+
+            margin-top: 12px;
+
+        }
+
+
+
+
+
+
+
+
+        .gal {
+
+            display: grid;
+
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+            gap: 14px;
+
+        }
+
+
+
+        .gal figure {
+
+            margin: 0;
+
+            border-radius: 20px;
+
+            overflow: hidden;
+
+            border: 1px solid var(--line);
+
+            background: linear-gradient(
+
+                145deg,
+
+                rgba(176, 122, 82, 0.28),
+
+                rgba(176, 122, 82, 0.06)
+
+            );
+
+        }
+
+
+
+        .gal svg {
+
+            display: block;
+
+            width: 100%;
+
+            aspect-ratio: 1;
+
+            padding: 22px;
+
+            stroke: var(--ink);
+
+            fill: none;
+
+            stroke-width: 5;
+
+            stroke-linecap: round;
+
+            stroke-linejoin: round;
+
+        }
+
+
+
+        .gal figcaption {
+
+            padding: 10px 16px;
+
+            background: var(--card);
+
+            font-weight: 700;
+
+            font-size: 0.95rem;
+
+            border-top: 1px solid var(--line);
+
+        }
+
+
+
+
+
+
+
+
+        .loc {
+
+            display: grid;
+
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+
+            gap: 14px;
+
+        }
+
+
+
+        .loc a {
+
+            color: var(--acc2);
+
+            font-weight: 700;
+
+        }
+
+
+
+
+
+
+
+
+        .cta {
+
+            margin-top: 64px;
+
+            text-align: center;
+
+            background: var(--card);
+
+            border: 1px solid var(--line);
+
+            border-radius: 24px;
+
+            padding: 44px 20px;
+
+        }
+
+
+
+        .cta h2 {
+
+            margin: 0 0 8px;
+
+        }
+
+
+
+
+
+
+
+
+        footer {
+
+            margin: 48px 0 0;
+
+            padding: 22px 0;
+
+            border-top: 1px solid var(--line);
+
+            text-align: center;
+
+            color: var(--mute);
+
+            font-size: 0.82rem;
+
+        }
+
+    
+        /* כפתור WhatsApp צף */
+        .whatsapp-float {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            z-index: 1000;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 13px 20px;
+            border-radius: 999px;
+            background: #25D366;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.98rem;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.22);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .whatsapp-float:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 22px rgba(0, 0, 0, 0.26);
+        }
+
+        .whatsapp-float svg {
+            width: 25px;
+            height: 25px;
+            flex: 0 0 25px;
+            fill: currentColor;
+        }
+
+        @media (max-width: 480px) {
+            .whatsapp-float {
+                right: 14px;
+                bottom: 14px;
+                padding: 12px 16px;
+                font-size: 0.9rem;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+
+<body>
+
+
+
+        <!-- ניווט עליון -->
+
+
+
+    <nav>
+
+        <div class="w">
+
+
+
+            <b>שי עבודי <span>·</span> עיצוב שיער</b>
+
+
+
+            <div>
+
+                <a href="#services">שירותים</a>
+
+                <a href="#prices">מחירון</a>
+
+                <a href="#visit">איך מגיעים</a>
+
+
+
+                <a
+
+                    class="btn"
+
+                    href="https://wa.me/972542234223"
+
+                    target="\_blank"
+
+                    rel="noopener noreferrer"
+
+                >
+
+                    לקביעת תור
+
+                </a>
+
+            </div>
+
+
+
+        </div>
+
+    </nav>
+
+
+
+
+
+        <!-- אזור פתיחה -->
+
+
+
+    <header class="hero">
+
+
+
+        <div class="w">
+
+
+
+            <svg class="art" viewBox="0 0 200 200" aria-hidden="true">
+
+
+
+                <circle
+
+                    cx="100"
+
+                    cy="100"
+
+                    r="96"
+
+                    fill="var(--acc)"
+
+                    opacity=".15"
+
+                />
+
+
+
+                <path
+
+                    d="M60 40c-20 40-20 90 10 130
+
+                    M85 35c-18 45-14 95 6 135
+
+                    M112 35c10 45 8 95-8 135
+
+                    M138 42c14 40 10 90-12 128"
+
+                    fill="none"
+
+                    stroke="var(--acc)"
+
+                    stroke-width="5"
+
+                    stroke-linecap="round"
+
+                />
+
+
+
+                <g
+
+                    stroke="var(--ink)"
+
+                    stroke-width="5"
+
+                    stroke-linecap="round"
+
+                    fill="none"
+
+                >
+
+                    <path d="M68 152L135 58M137 152L70 58"/>
+
+                    <circle cx="62" cy="162" r="11"/>
+
+                    <circle cx="143" cy="162" r="11"/>
+
+                </g>
+
+
+
+            </svg>
+
+
+
+            <div class="tag">HAIR DESIGN · YAVNE</div>
+
+
+
+            <h1>
+
+                שיער שמרגיש <em>כמוך</em>
+
+            </h1>
+
+
+
+            <p>
+
+                עיצוב שיער אישי ומקצועי בלב יבנה.
+
+                תספורת, צבע וסטיילינג,
+
+                עם ייעוץ שמתאים לסגנון ולמבנה הפנים שלך.
+
+            </p>
+
+
+
+            <a
+
+                class="btn"
+
+                href="https://wa.me/972542234223"
+
+                target="\_blank"
+
+                rel="noopener noreferrer"
+
+            >
+
+                לקביעת תור
+
+            </a>
+
+
+
+            <a class="btn o" href="#prices">
+
+                למחירון
+
+            </a>
+
+
+
+            <div>
+
+                <span class="rate">
+
+                    <b>★ 5.0</b>
+
+                    דירוג בגוגל
+
+                </span>
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </header>
+
+
+
+
+
+        <!-- תוכן האתר -->
+
+
+
+    <main class="w">
+
+
+
+
+
+        <!-- שירותים -->
+
+
+
+        <section id="services">
+
+
+
+            <h2>השירותים שלנו</h2>
+
+
+
+            <p class="sub">
+
+                הכל במקום אחד, לנשים, לגברים ולילדים.
+
+            </p>
+
+
+
+            <div class="grid">
+
+
+
+                <div class="c">
+
+                    <div class="i">✂️</div>
+
+                    <h3>תספורות</h3>
+
+                    <p>גזרות מותאמות אישית לנשים, גברים וילדים.</p>
+
+                </div>
+
+
+
+                <div class="c">
+
+                    <div class="i">🎨</div>
+
+                    <h3>צבע וגוונים</h3>
+
+                    <p>צביעת שורשים, גוונים ובליאז׳ למראה טבעי ומבריק.</p>
+
+                </div>
+
+
+
+                <div class="c">
+
+                    <div class="i">💨</div>
+
+                    <h3>פן וסטיילינג</h3>
+
+                    <p>פן, תסרוקות לאירועים ועיצוב לכל יום.</p>
+
+                </div>
+
+
+
+                <div class="c">
+
+                    <div class="i">✨</div>
+
+                    <h3>ייעוץ אישי</h3>
+
+                    <p>שיחה קצרה לפני שמתחילים, כדי שתצאו עם בדיוק מה שרציתם.</p>
+
+                </div>
+
+
+
+            </div>
+
+
+
+        </section>
+
+
+
+
+
+        <!-- מחירון -->
+
+
+
+        <section id="prices">
+
+
+
+            <h2>מחירון</h2>
+
+
+
+            <p class="sub">
+
+                טווחי מחירים מקובלים באזור.
+
+                המחיר המדויק נקבע לפי אורך,
+
+                סוג העבודה והתאמה אישית.
+
+            </p>
+
+
+
+            <div class="pl">
+
+
+
+                <div>
+
+                    <span>תספורת גבר</span>
+
+                    <b>₪30–90</b>
+
+                </div>
+
+
+
+                <div>
+
+                    <span>תספורת ילד</span>
+
+                    <b>₪50–80</b>
+
+                </div>
+
+
+
+                <div>
+
+                    <span>תספורת אישה</span>
+
+                    <b>₪150–300</b>
+
+                </div>
+
+
+
+                <div>
+
+                    <span>תספורת אישה כולל פן</span>
+
+                    <b>₪150–300</b>
+
+                </div>
+
+
+
+                <div>
+
+                    <span>צביעת שורשים</span>
+
+                    <b>₪80–200</b>
+
+                </div>
+
+
+
+            </div>
+
+
+
+            <p class="note">
+
+                * המחירים להמחשה בלבד ואינם מחירון רשמי של העסק.
+
+            </p>
+
+
+
+        </section>
+
+
+
+
+
+        <!-- גלריית עבודות -->
+
+
+
+        <section id="gallery">
+
+
+
+            <h2>הצצה לעבודה</h2>
+
+
+
+            <p class="sub">
+
+                איורים להמחשה. תמונות אמיתיות מהמספרה יתווספו כאן.
+
+            </p>
+
+
+
+            <div class="gal">
+
+
+
+                <figure>
+
+                    <svg viewBox="0 0 200 200" aria-hidden="true">
+
+                        <path d="M68 150L135 50M137 150L70 50"/>
+
+                        <circle cx="62" cy="162" r="12"/>
+
+                        <circle cx="143" cy="162" r="12"/>
+
+                    </svg>
+
+                    <figcaption>תספורת</figcaption>
+
+                </figure>
+
+
+
+                <figure>
+
+                    <svg viewBox="0 0 200 200" aria-hidden="true">
+
+                        <rect x="25" y="65" width="150" height="24" rx="8"/>
+
+                        <path d="M40 89v50M58 89v50M76 89v50M94 89v50M112 89v50M130 89v50M148 89v50M164 89v50"/>
+
+                    </svg>
+
+                    <figcaption>סטיילינג</figcaption>
+
+                </figure>
+
+
+
+                <figure>
+
+                    <svg viewBox="0 0 200 200" aria-hidden="true">
+
+                        <path d="M55 70h70a32 32 0 0 1 0 64H55z"/>
+
+                        <rect x="28" y="76" width="27" height="52" rx="6"/>
+
+                        <rect x="92" y="134" width="24" height="44" rx="9"/>
+
+                    </svg>
+
+                    <figcaption>פן</figcaption>
+
+                </figure>
+
+
+
+                <figure>
+
+                    <svg viewBox="0 0 200 200" aria-hidden="true">
+
+                        <circle cx="78" cy="90" r="38" fill="#d9a066" fill-opacity=".6"/>
+
+                        <circle cx="122" cy="90" r="38" fill="#8a4b2a" fill-opacity=".6"/>
+
+                        <circle cx="100" cy="125" r="38" fill="#f1d1a6" fill-opacity=".6"/>
+
+                    </svg>
+
+                    <figcaption>צבע וגוונים</figcaption>
+
+                </figure>
+
+
+
+            </div>
+
+
+
+        </section>
+
+
+
+
+
+        <!-- פרטי הגעה -->
+
+
+
+        <section id="visit">
+
+
+
+            <h2>בואו לבקר</h2>
+
+
+
+            <p class="sub">
+
+                במרכז המסחרי נווה אילן, ביבנה.
+
+            </p>
+
+
+
+            <div class="loc">
+
+
+
+                <div class="c">
+
+
+
+                    <h3>📍 כתובת</h3>
+
+
+
+                    <p>
+
+                        האגוז 2, יבנה<br>
+
+                        קניון נווה אילן
+
+                    </p>
+
+
+
+                    <p style="margin-top: 10px;">
+
+
+
+                        <a
+
+                            href="https://www.google.com/maps/search/?api=1&query=%D7%A9%D7%99+%D7%A2%D7%91%D7%95%D7%93%D7%99+%D7%A2%D7%99%D7%A6%D7%95%D7%91+%D7%A9%D7%99%D7%A2%D7%A8+%D7%94%D7%90%D7%92%D7%95%D7%96+2+%D7%99%D7%91%D7%A0%D7%94"
+
+                        >
+
+                            ניווט בגוגל מפות
+
+                        </a>
+
+
+
+                    </p>
+
+
+
+                </div>
+
+
+
+
+
+                <div class="c">
+
+
+
+                    <h3>🕚 שעות</h3>
+
+
+
+                    <p>
+
+                        פתוח מהשעה 11:00<br>
+
+                        שעות הסגירה והימים לפי תיאום
+
+                    </p>
+
+
+
+                </div>
+
+
+
+
+
+                <div class="c">
+
+
+
+                    <h3>⭐ מה אומרים</h3>
+
+
+
+                    <p>
+
+                        5.0 בגוגל.
+
+                        נשמח לראות אתכם ולהוסיף את הביקורת הבאה.
+
+                    </p>
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+        </section>
+
+
+
+
+
+        <!-- קריאה לפעולה -->
+
+
+
+        <section class="cta">
+
+
+
+            <h2>מוכנים לשינוי?</h2>
+
+
+
+            <p class="sub">
+
+                קבעו תור ובואו להכיר.
+
+            </p>
+
+
+
+            <a
+
+                class="btn"
+
+                href="https://www.google.com/maps/search/?api=1&query=%D7%A9%D7%99+%D7%A2%D7%91%D7%95%D7%93%D7%99+%D7%A2%D7%99%D7%A6%D7%95%D7%91+%D7%A9%D7%99%D7%A2%D7%A8+%D7%99%D7%91%D7%A0%D7%94"
+
+            >
+
+                מצאו אותנו בגוגל
+
+            </a>
+
+
+
+        </section>
+
+
+
+    </main>
+
+
+
+
+
+        <!-- תחתית האתר -->
+
+
+
+    <footer>
+
+
+
+        <div class="w">
+
+            אתר הצגה לדוגמה, נבנה על בסיס מידע ציבורי.
+
+            אינו האתר הרשמי של העסק.
+
+        </div>
+
+
+
+    </footer>
+
+
+
+
+    <!-- כפתור WhatsApp צף -->
+    <a
+        class="whatsapp-float"
+        href="https://wa.me/972542234223"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="שלחו הודעה בוואטסאפ"
+    >
+        <svg viewBox="0 0 32 32" aria-hidden="true">
+            <path d="M16.02 3C8.86 3 3.04 8.78 3.04 15.9c0 2.28.6 4.5 1.74 6.46L3 29l6.85-1.78a13.1 13.1 0 0 0 6.16 1.54h.01c7.15 0 12.97-5.79 12.97-12.9A12.8 12.8 0 0 0 16.02 3zm0 23.58h-.01c-1.91 0-3.78-.51-5.42-1.48l-.39-.23-4.06 1.05 1.08-3.93-.25-.4a10.62 10.62 0 0 1-1.65-5.69c0-5.9 4.82-10.7 10.72-10.7 2.86 0 5.55 1.11 7.57 3.13a10.62 10.62 0 0 1 3.14 7.56c0 5.9-4.81 10.69-10.73 10.69zm5.89-8.01c-.32-.16-1.9-.94-2.2-1.05-.3-.11-.51-.16-.72.16-.21.32-.83 1.05-1.02 1.27-.19.21-.37.24-.69.08-.32-.16-1.35-.5-2.57-1.59-.95-.84-1.59-1.88-1.78-2.2-.19-.32-.02-.49.14-.65.14-.14.32-.37.48-.56.16-.19.21-.32.32-.53.11-.21.05-.4-.03-.56-.08-.16-.72-1.73-.99-2.37-.26-.62-.52-.54-.72-.55h-.61c-.21 0-.56.08-.85.4-.29.32-1.11 1.08-1.11 2.64s1.14 3.06 1.3 3.27c.16.21 2.24 3.41 5.43 4.78.76.33 1.35.53 1.81.68.76.24 1.45.21 2 .13.61-.09 1.9-.78 2.17-1.53.27-.75.27-1.4.19-1.53-.08-.13-.29-.21-.61-.37z"/>
+        </svg>
+    </a>
+
+</body>
+
+</html>
